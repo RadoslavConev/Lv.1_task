@@ -10,7 +10,7 @@ for ($i=0; $i < $arr_count; $i++) {
 		if ( ($i + 2) <= $arr_count ) {
 			$next_front = substr($arr[$i + 2], 0, 1);
 			$next_rear = substr($arr[$i + 1], -1);
-			}
+		}
 	if ($front != $rear && $next_rear != $next_front) {
 			$arr[$i + 1] = substr_replace($arr[$i + 1], $rear, 0, 1);
 			$result++;
